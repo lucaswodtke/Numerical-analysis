@@ -1,0 +1,29 @@
+Aproxime f(x)=cos(x) no intervalo [ 0; +pi/2 ]. com erro até Ordem 1e-4, através das seguintes técnicas:
+
+(Primeiro normalize x do intervalo [ 0; +pi/2 ] para t no intervalo [ -1; +1 ])
+
+1). Interpolação polinomial;
+
+2). Interpolação Spline Cúbica (quadrática nos extremos);
+
+3). Curvas de Bezier (demonstração com 4 subintervalos, 4 curvas de Bezier, sem necessidade de chegar ao erro  O(1e-4), mas mantendo as inclinações nos pontos extremos de cada curva de Bezier);
+
+4). Série de Maclaurin;
+
+5). Série de Maclaurin-Tchebyschev (algebricamente, grau 2, só para demonstração);
+
+6). Série de Tchebyschev com até Erro de Ordem 1e-4;
+
+7). Série de Racional de Padé.
+
+8). Estenda a melhor das aproximações obtidas para um x do intervalo de  [ 0; +2*pi ], fazendo correspondências entre quadrantes, e calcule o erro exato para x=3.
+
+Imprima:
+
+- os graus 'n';
+
+- os n+1 coeficientes gerados;
+
+- o Erro máximo de cada aproximação.
+
+Plote, em um gráfico único, com os erros locais das aproximações geradas com Erro de O(1e-4), para x no intervalo [ 0; pi/2 ].

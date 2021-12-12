@@ -1,0 +1,61 @@
+Trabalho 1   (Métodos Diretos e Iterativos para Sistemas de equações lineares Esparsos):
+
+ 
+
+Dado o sistema linear abaixo para n=50 equações:
+
+ 
+
+para  i=1;                                  x(i)+x(i+1)=1.50;
+
+para  i=2:n/2                  x(i-1)+4x(i)+x(i+1)=1.00;
+
+para  i=n/2+1:n-1           x(i-1)+5x(i)+x(i+1)=2.00;
+
+para  i=n;                       x(i-1)+x(i)            =3.00;
+
+ 
+
+a). Armazene o sistema acima em forma de matriz completa;
+
+a1). Resolva o sistema acima pelo  método direto LU-Crout;
+
+a2). Imprima somente a 1º e última incógnitas e o resíduo máximo;
+
+a3). Calcule o número total de operações em PONTO FLUTUANTE utilizadas e imprima o número de operações teórico;
+
+ 
+
+b). Armazene o sistema acima na forma otimizada de 4 vetores;
+
+b1). Resolva o sistema acima por um método direto otimizado (Gauss-Otimizado);
+
+b2). Imprima somente a 1º e última incognitas e o resíduo máximo;
+
+b3). Calcule o número total de operações em PONTO FLUTUANTE utilizadas;
+
+ 
+
+c). Resolva o sistema acima por um método iterativo (Gauss-Seidel):
+
+c1). Avalie previamente (algebricamente) se este sistema tem convergência garantida e se é recomendado testar o uso de fator de sub ou sobre relaxação (se não tiver diagonal dominante ou fortemente dominante). Imprima esta análise;
+
+c2). Teste fatores de relaxação f (sub ou sobre, entre 0<f<2) e determine previamente o seu valor otimizado, que permita a convergência com o menor número de iterações, pelo método iterativo de Gauss-Seidel. Imprima o numero de iterações de cada teste (pode-se usar critério de parada maior que 1e-4, para  efetuar menos iterações nesta fase de testes);
+
+b3). Determine a solução S={xi} do sistema acima, pelo método iterativo de Gauss-Seidel, com critério de parada Max|Dxi|<=1.10-4 (Dx = diferenças entre variáveis novas e antigas), e uso o valor otimizado do fator de relaxação obtido acima. Imprima somente a 1º e última incógnitas e o resíduo máximo. Use um algoritmo otimizado, que não realize cálculos com lugares vazios na matriz, senão o método de Gauss-Seidel não vale a pena;
+
+c4). Imprima o número de iterações e o número total de operações em PONTO FLUTUANTE utilizadas;
+
+c5). Imprima o erro de Truncamento máximo na solução S obtida acima, em variavel ‘double’ para isolar o efeitos dos arredondamentos. Lembre-se que o erro de Truncamento máximo pode ser obtido com  Max|xi(aproximado,double,criterio)-xi(aproximado,double,criterio2)|.
+
+ 
+
+d). Imprima, no final, o número de operações em PONTO FLUTUANTE utilizadas em cada um dos 3 métodos e indique o melhor método utilizado.
+
+ 
+
+Obs.:
+
+(i). Faça o algoritmo completo, com um programa principal (tipo main.m) que chame todas as functions necessárias para cada item, postado no ambiente VPL deste link. O main.m deve ser o primeiro arquivo.
+
+(ii). Imprima resposta de forma clara e concisa com os resultados de cada item.
